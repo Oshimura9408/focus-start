@@ -1,0 +1,55 @@
+.catalog-main {
+	width: 1180px;
+	margin:0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.catalog {
+	width:375px;
+	background-color: white;
+	float: left;
+	margin-bottom: -20000px;
+    padding-bottom: 20000px;
+}
+
+.catalog-wrapper {
+	width:321px;
+	margin: 0 auto;
+}
+
+.catalog__title {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.catalog-description {
+	width: 773px;
+	background-color: white;
+	float:right;
+	margin-bottom: -20000px;
+    padding-bottom: 20000px;
+}
+
+.description {
+	width: 393px;
+	float: left;
+}
+
+.photo {
+	float: right;
+	width: 252px;
+}
+
+.photo img {
+	width: 252px;
+	height: 190px;
+}
+
+.main-func-wrapper {
+	width: 695px;
+	margin:0 auto;
+}
+
+.main-func__title {
+	border-bottom: 1px solid #d8d8d8;
+}
