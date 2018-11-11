@@ -9,13 +9,13 @@
 
 	<header class="page-header">
 		<div class="logo">
+			<a href="index.html"><img class = "logo__img" src="svg/logo.svg" alt="ЦФТ" width = "145px" height = "60px"></a>
 		</div>
-		
 		<div class="navigation">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог приложений</a></li>
-				<li><a href="#">О компании</a></li>
+			<ul class = "user-list">
+				<li class = "user-list__item"><a href="index.html">Главная</a></li>
+				<li class = "user-list__item"><a href="catalog.html">Каталог приложений</a></li>
+				<li class = "user-list__item"><a href="#">О компании</a></li>
 			</ul>
 		</div>
 		<div class="clear"> </div>
@@ -26,21 +26,21 @@
 		<div class="catalog">
 			<div class="catalog-wrapper">
 				<h2 class="catalog__title"> Каталог приложений </h2>
-			<ul>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li><a href="safe.html">Аренда сейфов</a></li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
+			<ul class = "catalog-list">
+				<li class = "catalog-list__item"><a href="#">Стандартный пакет</li>
+				<li class = "catalog-list__item"><a href="#">Новый ЦФТ-Банк</a></li>
+				<li class = "catalog-list__item"><a href="#">Cash Management</a></li>
+				<li class = "catalog-list__item"><a href="safe.html">Аренда сейфов</a></li>
+				<li class = "catalog-list__item"><a href="#">Банковские гарантии</a></li>
+				<li class = "catalog-list__item"><a href="#">Казначейство</a></li>
+				<li class = "catalog-list__item"><a href="#">Страхование</a></li>
+				<li class = "catalog-list__item"><a href="#">Факторинговое обслуживание</a></li>
+				<li class = "catalog-list__item"><a href="#">Переводы средств</a></li>
+				<li class = "catalog-list__item"><a href="#">Расчетный центр</a></li>
+				<li class = "catalog-list__item"><a href="#">Пластиковые карты</a></li>
+				<li class = "catalog-list__item"><a href="#">Финансовый мониторинг</a></li>
+				<li class = "catalog-list__item"><a href="#">Депозиты и вклады</a></li>
+				<li class = "catalog-list__item"><a href="#">Инвестиции</a></li>
 			</ul>
 			</div>
 		</div>
@@ -49,18 +49,26 @@
 			<h2 class="catalog-description__title">Новый ЦФТ-банк</h2>
 			<div class="catalog-description__item">
 				<div class="description">
-					<p>09 сентября 2016</p>
-					<span class="description__text">
-					Приложение лицензировано в 25 банках
+					<p class = "description__data__text">09 сентября 2016</p>
+					<div class="description__text">
+						<span>
+							Приложение лицензировано в 25 банках
 							Тип Приложения: Базовое
 							Разработчик: ЦФТ
 							Код по каталогу: 1B365001
-							Требования: совместимо с v.14.1, ТЯ v.7.4.0.0 и выше, при наличии лицензии на Проигрыватель форм в web
-					</span>
+						</span>
+						<div class = "requirements">Требования:</div>
+						<span>совместимо с v.14.1, ТЯ v.7.4.0.0 и выше, при наличии лицензии на Проигрыватель форм в web</span>
+					</div>
 				</div>
 				<div class="photo">
-					<img>
-					<button>123
+					<img src = "img/shot-2.jpg" alt = "shot-2">
+					<div class="photo__button">
+						<a class="btn btn__order">В корзину</a>
+						<svg class = "icon-basket" width="32" height="32"><use xlink:href="#icon-basket"></use></svg>
+						<svg class = "icon-check" width="32" height="32"><use xlink:href="#icon-thick-check"></use></svg>		
+					</div>
+					
 				</div>
 				<div class="clear"> </div>
 			</div>
@@ -69,16 +77,82 @@
 				<div class="main-func-wrapper">
 					<h2 class="main-func__title">Основные функции</h2>
 					
-					<ul>
-						<li>Выполнение операций по банковским продуктам, используемым клиентом, и оформление новых продуктов банка непосредственно из Единого окна</li>
-						<li>Возможность определения одного банковского продукта для отображения в Едином окне как рекомендуемого (для формирования списка адресно рекомендуемых продуктов необходима лицензия на Приложение Управление целевым маркетингом)</li>
-						<li>Начисление баллов операционным сотрудникам за выполнение операций по банковским продуктам и отображение результатов в Едином окне (для использования гибкой настройки условий начисления баллов необходима лицензия на Приложение Игрофикация)</li>
+					<ul class = "main-func-list">
+						<li class = "main-func-list__item">Выполнение операций по банковским продуктам, используемым клиентом, и оформление новых продуктов банка непосредственно из Единого окна</li>
+						<li class = "main-func-list__item">Возможность определения одного банковского продукта для отображения в Едином окне как рекомендуемого (для формирования списка адресно рекомендуемых продуктов необходима лицензия на Приложение Управление целевым маркетингом)</li>
+						<li class = "main-func-list__item">Начисление баллов операционным сотрудникам за выполнение операций по банковским продуктам и отображение результатов в Едином окне (для использования гибкой настройки условий начисления баллов необходима лицензия на Приложение Игрофикация)</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="clear"> </div>
 	</div>
-		
+
+	<div class = "modal">
+		<div class = "modal__wrapper">
+			<div class = "steps">
+				<ul class = "steps-list">
+					<li class="steps-list__item">
+						<div class = "step step--done">
+							<div class = "num">
+								<span class = "num__text">1</span>
+							</div>
+							
+						</div>
+							Список приложений
+					</li>
+					<li class="steps-list__item">
+						<div class = "step ">
+							<div class = "num">
+								<span class = "num__text">2</span>
+							</div>
+							
+						</div>
+						Оплата
+					</li>
+					<li class="steps-list__item">
+						<div class = "step">
+							<div class = "num">
+								<span class = "num__text">3</span>
+							</div>
+							
+						</div>
+						Контактная информация
+					</li>
+					<li class="steps-list__item">
+						<div class = "step">
+							<div class = "num">
+								<span class = "num__text">4</span>
+							</div>
+							
+						</div>
+						Подтверждение
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class = "modal__overlay">
+
+		</div>
+	</div>
+
+
+	<div class="svg-container">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+				<symbol id="icon-basket" width="32" height="32" viewBox="0 0 32 32">
+					<g fill="none" fill-rule="evenodd" stroke-linecap="round">
+						<path stroke-width="2" d="M6.374 13.224h18.702c.275 0 .434.047.354.344l-2.85 10.686c-.08.292-.294.64-.482.64H9.352c-.187 0-.401-.436-.481-.734L6.02 13.67c-.08-.292.078-.446.353-.446zM13.78 7l-5.446 6.224M17.67 7l5.447 6.224"/>
+						<path d="M12 17.114v3.113M20 17.114v3.113M16 17.114v3.113"/>
+					</g>
+				</symbol>
+
+				<symbol id="icon-thick-check" width="32" height="32" viewBox="0 0 32 32">
+						<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="2">
+							<path d="M2.348 15.942l8.79 9.23M29.552 6L11.217 25.141"/>
+						</g>
+					  </symbol>
+			</svg>
+	</div>
 </body>
 </html>

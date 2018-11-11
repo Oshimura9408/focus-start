@@ -9,13 +9,14 @@
 
 	<header class="page-header">
 		<div class="logo">
+			<a href="index.html"><img class = "logo__img" src="svg/logo.svg" alt="ЦФТ" width = "145px" height = "60px"></a>
 		</div>
 		
 		<div class="navigation">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог приложений</a></li>
-				<li><a href="#">О компании</a></li>
+			<ul class = "user-list">
+				<li class = "user-list__item"><a href="index.html">Главная</a></li>
+				<li class = "user-list__item"><a href="catalog.html">Каталог приложений</a></li>
+				<li class = "user-list__item"><a href="#">О компании</a></li>
 			</ul>
 		</div>
 		<div class="clear"> </div>
@@ -26,21 +27,21 @@
 		<div class="catalog">
 			<div class="catalog-wrapper">
 				<h2 class="catalog__title"> Каталог приложений </h2>
-			<ul>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li><a href="safe.html">Аренда сейфов</a></li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
-				<li>Стандартный пакет</li>
+			<ul class = "catalog-list">
+				<li class = "catalog-list__item"><a href="#">Стандартный пакет</li>
+				<li class = "catalog-list__item"><a href="#">Новый ЦФТ-Банк</a></li>
+				<li class = "catalog-list__item"><a href="#">Cash Management</a></li>
+				<li class = "catalog-list__item"><a href="safe.html">Аренда сейфов</a></li>
+				<li class = "catalog-list__item"><a href="#">Банковские гарантии</a></li>
+				<li class = "catalog-list__item"><a href="#">Казначейство</a></li>
+				<li class = "catalog-list__item"><a href="#">Страхование</a></li>
+				<li class = "catalog-list__item"><a href="#">Факторинговое обслуживание</a></li>
+				<li class = "catalog-list__item"><a href="#">Переводы средств</a></li>
+				<li class = "catalog-list__item"><a href="#">Расчетный центр</a></li>
+				<li class = "catalog-list__item"><a href="#">Пластиковые карты</a></li>
+				<li class = "catalog-list__item"><a href="#">Финансовый мониторинг</a></li>
+				<li class = "catalog-list__item"><a href="#">Депозиты и вклады</a></li>
+				<li class = "catalog-list__item"><a href="#">Инвестиции</a></li>
 			</ul>
 			</div>
 		</div>
@@ -49,56 +50,143 @@
 			<h2 class="catalog-description__title">Каталог - Аренда сейфов</h2>
 			<div class="table">
 				<table>
-					<tr>
-						<th>Наименование</th>
-						<th>Описание</th>
-						<th>Стоимость(тыс у.е.)</th>
+					<tr class = "tb-head">
+						<th class = "col-name">Наименование</th>
+						<th class = "col-desc">Описание</th>
+						<th class = "col-price">Стоимость (тыс у.е.)</th>
 					</tr>
 					<tr>
 						<td>
-							<div>
-								<img width='80px' height='60px'>
-								<p>Учет сейфовых ячеек</p>
-								<p>09 сентября 2016</p>
+							<div class = "item-name">
+								<img src="img/shot-2.jpg" width='80px' height='60px'>
+								<div class = "item-name__desc">
+									<p class = "desc">Учет сейфовых ячеек</p>
+									<span class="desc-data">09 сентября 2016</span>
+								</div>
+								
 							</div>
 						</td>
 						<td>
-							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							<div class = "item-desc">
+								<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							</div>
 						</td>
 						<td>
-							<span>4.99</span>
+							<div class="item-price">
+								<span>4.99</span>
+							</div>
+							
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<div>
-								<img width='80px' height='60px'>
-								<p>Учет сейфовых ячеек</p>
-								<p>09 сентября 2016</p>
+							<div class = "item-name">
+								<img src="img/shot-2.jpg" width='80px' height='60px'>
+								<div class = "item-name__desc">
+									<p class = "desc">Учет сейфовых ячеек</p>
+									<span class="desc-data">09 сентября 2016</span>
+								</div>
+								
 							</div>
 						</td>
 						<td>
-							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							<div class = "item-desc">
+								<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							</div>
 						</td>
 						<td>
-							<span>4.99</span>
+							<div class="item-price">
+								<span>4.99</span>
+							</div>
+							
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<div>
-								<img width='80px' height='60px'>
-								<p>Учет сейфовых ячеек</p>
-								<p>09 сентября 2016</p>
+							<div class = "item-name">
+								<img src="img/shot-2.jpg" width='80px' height='60px'>
+								<div class = "item-name__desc">
+									<p class = "desc">Учет сейфовых ячеек</p>
+									<span class="desc-data">09 сентября 2016</span>
+								</div>
+								
 							</div>
 						</td>
 						<td>
-							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							<div class = "item-desc">
+								<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+							</div>
 						</td>
 						<td>
-							<span>4.99</span>
+							<div class="item-price">
+								<span>4.99</span>
+							</div>
+							
 						</td>
 					</tr>
+					<tr>
+					<td>
+						<div class = "item-name">
+							<img src="img/shot-2.jpg" width='80px' height='60px'>
+							<div class = "item-name__desc">
+								<p class = "desc">Учет сейфовых ячеек</p>
+								<span class="desc-data">09 сентября 2016</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class = "item-desc">
+							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+						</div>
+					</td>
+					<td>
+						<div class="item-price">
+							<span>4.99</span>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class = "item-name">
+							<img src="img/shot-2.jpg" width='80px' height='60px'>
+							<div class = "item-name__desc">
+								<p class = "desc">Учет сейфовых ячеек</p>
+								<span class="desc-data">09 сентября 2016</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class = "item-desc">
+							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+						</div>
+					</td>
+					<td>
+						<div class="item-price">
+							<span>4.99</span>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class = "item-name">
+							<img src="img/shot-2.jpg" width='80px' height='60px'>
+							<div class = "item-name__desc">
+								<p class = "desc">Учет сейфовых ячеек</p>
+								<span class="desc-data">09 сентября 2016</span>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class = "item-desc">
+							<span>Аналитический учет сейфовых ячеек банка по подразделениям банка.</span>
+						</div>
+					</td>
+					<td>
+						<div class="item-price">
+							<span>4.99</span>
+						</div>	
+					</td>
+				</tr>
 				</table>
 			</div>
 		</div>

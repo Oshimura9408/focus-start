@@ -1,3 +1,21 @@
+:root {
+	--title-text-color:#34495e;
+}
+
+.btn {
+	cursor: pointer;
+	width: 160px;
+	height: 40px;
+	border: none;
+  	border-radius: 3px;
+	background-color: #358ed7;
+	font-family: "Arial";
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--white);
+	text-transform: uppercase;
+}
+
 .catalog-main {
 	width: 1180px;
 	margin:0 auto;
@@ -19,30 +37,156 @@
 }
 
 .catalog__title {
+	margin-top: 41px;
+	padding-bottom: 18px;
 	border-bottom: 1px solid #d8d8d8;
+	font-family: "Lato", sans-serif;
+  	font-size: 24px;
+  	font-weight: 600;
+  	color: var(--title-text-color);
+}
+
+.catalog-list {
+	list-style: none;
+	padding: 0;
+	padding-left: 5px;
+}
+
+.catalog-list__item {
+	font-family: "Arial";
+	font-size: 20px;
+	color: #79878e;
+	margin-bottom: 15px;
+}
+
+.catalog-list__item::before {
+	content: "•"; 
+	color: #79878e;
+	margin-right: 15px;
+}
+
+.catalog-list__item a {
+	text-decoration: none;
+	color: #79878e;
+}
+
+.catalog-list__item a:hover {
+	color: #ed1b2f;
+	text-decoration: underline;
 }
 
 .catalog-description {
 	width: 773px;
 	background-color: white;
-	float:right;
+	float:left;
+	margin-left: 25px;
 	margin-bottom: -20000px;
-    padding-bottom: 20000px;
+	padding-bottom: 20000px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+}
+
+.catalog-description__title {
+	width: 89%;
+	margin: 0;
+	margin-top: 30px;
+	margin-left: 41px;
+	margin-bottom: 24px;
+	padding-bottom: 16px;
+	font-family: "Lato", sans-serif;
+	font-size: 36px;
+	color: var(--title-text-color);
+	border-bottom: 1px solid #d8d8d8;
 }
 
 .description {
 	width: 393px;
 	float: left;
+	margin-left: 35px;
+}
+
+.description__data__text {
+	margin: 0;
+	margin-bottom: 14px;
+	font-family: "Arial";
+	font-size: 16px;
+	color: #adafb2;
+}
+
+.description__text span {
+	font-family: "Arial";
+	font-size: 20px;
+	color: #79878e;
+	line-height: 25px;
+}
+
+.requirements {
+	display: inline-block;
+	font-family: "Arial";
+	font-size: 20px;
+	color: #4f5659;
+	margin-top: 35px;
 }
 
 .photo {
 	float: right;
 	width: 252px;
+	margin-right: 42px;
 }
 
 .photo img {
 	width: 252px;
 	height: 190px;
+}
+
+.photo__button {
+	position: relative;
+	width: 160px;
+	margin: 0 auto;
+	margin-top: 18px;
+}
+
+.icon-basket {
+	position: absolute;
+	stroke: #ffffff;
+	width: 20px;
+	height: 20px;
+	top: 1px;
+	right: 20px;
+}
+
+.btn__order:hover {
+	color: var(--secondary);
+}
+
+.photo__button:hover .icon-basket{
+	stroke:	var(--secondary);
+}
+
+.photo__button:active .icon-basket {
+	display: none;
+}
+
+.btn__order {
+	
+	padding: 13px 45px;
+}
+
+.btn__order:active {
+	color: var(--white);
+}
+
+.icon-check {
+	display: none;
+	position: absolute;
+	stroke: #ffffff;
+	width: 18px;
+	height: 18px;
+	top: 1px;
+	right: 20px;
+}
+
+.photo__button:active .icon-check {
+	display: block;
 }
 
 .main-func-wrapper {
@@ -52,4 +196,101 @@
 
 .main-func__title {
 	border-bottom: 1px solid #d8d8d8;
+	font-family: "Arial";
+	font-weight: 400;
+	font-size: 22px;
+	text-transform: uppercase;
+	padding-bottom: 19px;
+	margin-top: 43px;
+}
+
+.main-func-list__item {
+	font-family: "Arial";
+	font-size: 18px;
+	color: #4d5762;
+	padding-left: 8px;
+	margin-bottom: 20px;
+	line-height: 31px;
+}
+
+.table {
+	margin-top: -25px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	
+}
+
+tr:nth-child(2n+1) {
+	background-color: #f1f1f1;
+}
+
+.tb-head {
+	height: 34.9px;
+	background-color: #f1f1f1;
+	font-family: "Arial";
+	font-size: 14px;
+	color: #414141;
+}
+
+.col-name {
+	width: 340px;
+}
+
+.col-price {
+	padding: 5px;
+	padding-right: 45px;
+}
+
+.col-desc {
+	padding-right: 230px;
+}
+
+td {
+	padding: 10px 0;
+}
+
+.item-name {
+	position: relative;
+	margin-left: 35px;
+}
+
+.item-name__desc {
+	display: inline-block;
+    width: 220px;
+	margin-left: 22px;
+	position: absolute;
+    top: 15px;
+}
+
+.desc {
+	margin: 0;
+	font-family: "Arial";
+	font-size: 16px;
+	color: #79878e;
+}
+
+.desc-data {
+	font-family: Arial;
+	font-size: 13px;
+	color: #adafb2;
+}
+
+.item-desc {
+	width: 260px;
+}
+
+.item-price {
+	margin-left: 21px;
+	font-family: "Arial";
+  	font-size: 18px;
+  	color: #5f5f5f;
+}
+
+.item-desc span {
+	font-family: "Arial";
+	font-size: 13px;
+	color: #222222;
 }

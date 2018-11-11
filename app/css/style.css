@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('index.css');
 @import url('catalog.css');
+@import url('modal.css');
+
+* {
+	box-sizing: border-box;
+}
+
+.svg-container {
+	width: 0;
+	height: 0;
+}
 
 body {
 	font-family: "lato";

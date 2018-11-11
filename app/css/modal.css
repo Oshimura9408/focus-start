@@ -1,0 +1,79 @@
+.step {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #dddddd;
+    background-color: var(--white);
+    border-radius: 50px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    top: -7px;
+    left: -40px;
+    color: rgba(133, 133, 133, 0.29);
+}
+
+.step--done {
+    background-color: #358ed7;
+    color: var(--white);
+}
+
+.num {
+    position: relative;
+}
+
+.num__text {
+    position: absolute;
+    top: 5px;
+    right: 11px;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal__wrapper {
+    width: 1280px;
+    height: 960px;
+    background-color: var(--white);
+    z-index: 100;
+    margin: 0 auto;
+    margin-top: 108px;
+}
+
+.modal__overlay {
+    content: "";
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    height: calc(1000vw);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.steps-list {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.steps-list__item {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-top: 80px;
+    margin-left: 145px;
+}
