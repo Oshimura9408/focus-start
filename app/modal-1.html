@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Modal</title>
+</head>
+<body>
+    <div class = "modal modal--opened">
+        <div class = "modal__wrapper">
+            <div class = "steps">
+                <ul class = "steps-list">
+                    <li class="steps-list__item">
+                        <div class = "step step--done">
+                            <div class = "num">
+                                <span class = "num__text">1</span>
+                            </div>
+                                    
+                        </div>
+                            Список приложений
+                    </li>
+                    <li class="steps-list__item">
+                        <div class = "step ">
+                            <div class = "num">
+                                <span class = "num__text">2</span>
+                            </div>
+                                    
+                        </div>
+                            Оплата
+                    </li>
+                    <li class="steps-list__item">
+                        <div class = "step">
+                            <div class = "num">
+                                 <span class = "num__text">3</span>
+                            </div>
+                                    
+                        </div>
+                        Контактная информация
+                    </li>
+                    <li class="steps-list__item">
+                        <div class = "step">
+                            <div class = "num">
+                                <span class = "num__text">4</span>
+                            </div>        
+                        </div>
+                        Подтверждение
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "modal__tb">
+                <div class="modal__tb__head">
+                    <span>Приложение</span>
+                    <span>Стоимость</span>
+                    <span>Итог</span>
+                </div>
+            </div>
+            
+            <div class = "items-container">
+                <div class = "modal__item">
+                    <div class="modal__item__app">
+                        <img src="img/shot-2.jpg" alt="shot-2">
+                        <div class="modal__description">
+                            <span>Новый ЦФТ-Банк</span>
+                            <div class= "form-checkbox">
+                                <input name="checkbox" class="visually-hidden" type="checkbox" id="checkbox1">
+                                    <label class="form-item form-item--checkbox" for="checkbox1">
+                                        установка и настройка
+                                    </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal__item__price">
+                        <span>$139,99</span>
+                    </div>
+
+                    <div class="modal__item__control">
+                        <div class = "control">
+                            <div class = "minus">
+                                <svg class = "icon-minus" width="11" height="27"><use xlink:href="#icon-minus"></use></svg>
+                            </div>
+                            <div class = "control__num">
+                                <span>1</span>
+                            </div>
+
+                            <div class="plus">
+                                <svg class="icon-plus" width="14" height="26"><use xlink:href="#icon-plus"></use></svg>
+                            </div>
+                            
+                        </div>
+                        <span>$139,99</span>
+                    </div>
+                        
+                    <div class="modal__item__result">
+                        <span>$139,99</span>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class = "modal__overlay">
+        </div>
+    </div>
+        
+
+    <div class="svg-container">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+				<symbol id="icon-basket" width="32" height="32" viewBox="0 0 32 32">
+					<g fill="none" fill-rule="evenodd" stroke-linecap="round">
+						<path stroke-width="2" d="M6.374 13.224h18.702c.275 0 .434.047.354.344l-2.85 10.686c-.08.292-.294.64-.482.64H9.352c-.187 0-.401-.436-.481-.734L6.02 13.67c-.08-.292.078-.446.353-.446zM13.78 7l-5.446 6.224M17.67 7l5.447 6.224"/>
+						<path d="M12 17.114v3.113M20 17.114v3.113M16 17.114v3.113"/>
+					</g>
+				</symbol>
+
+				<symbol id="icon-thick-check" width="32" height="32" viewBox="0 0 32 32">
+					<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="2">
+						<path d="M2.348 15.942l8.79 9.23M29.552 6L11.217 25.141"/>
+					</g>
+                </symbol>
+                
+                <symbol id="icon-plus" width="32" height="32" viewBox="0 0 32 32">
+                    <defs>
+                        <path id="a" d="M1.122.196l-.926.925a.663.663 0 0 0 0 .943l17.74 17.74c.261.262.682.26.942 0l.925-.925a.663.663 0 0 0 0-.943L2.066.196a.663.663 0 0 0-.943 0z"/>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <path stroke="#4990E2" stroke-linecap="round" stroke-width="2" d="M16 3.878v24.244M28.122 16H3.878"/>
+                    </g>
+                </symbol>
+
+                <symbol id="icon-minus" width="32" height="32" viewBox="0 0 32 32">
+                        <defs>
+                            <path id="a" d="M1.122.196l-.926.925a.663.663 0 0 0 0 .943l17.74 17.74c.261.262.682.26.942 0l.925-.925a.663.663 0 0 0 0-.943L2.066.196a.663.663 0 0 0-.943 0z"/>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <path  stroke-linecap="round" stroke-width="2" d="M28.122 16H3.878"/>
+                        </g>
+                      </symbol>
+			</svg>
+	</div>
+</body>
+</html>
