@@ -46,7 +46,7 @@
 
 .modal__wrapper {
     width: 1280px;
-    height: 960px;
+    min-height: 630px;
     background-color: var(--white);
     z-index: 100;
     margin: 0 auto;
@@ -115,6 +115,9 @@
 .items-container {
     width: 88%;
     margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 30px;
 }
 
 .modal__item__app {
@@ -207,6 +210,10 @@ input[type="checkbox"]:checked + label::after {
     bottom: 34px;
 }
 
+.modal__item__control {
+    bottom: 25px;
+}
+
 .modal__item__price {
     margin-left: 185px;
 }
@@ -230,6 +237,11 @@ input[type="checkbox"]:checked + label::after {
 .control__num,
 .plus {
     display: inline-block;
+}
+
+.icon-minus,
+.icon-plus {
+    cursor: pointer;
 }
 
 .icon-minus {
@@ -259,4 +271,28 @@ input[type="checkbox"]:checked + label::after {
     position: relative;
     bottom:7px;
     margin-left: 10px;
+}
+
+.total-price {
+    margin-top: 63px;
+    margin-left: 54%;
+    padding-bottom: 130px;
+}
+
+.total-price span {
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+}
+
+.btn-next {
+    margin-left: 90px;
+    vertical-align: text-bottom;
+}
+
+.btn-next:hover {
+	color: var(--secondary);
+}
+
+.btn-next:active {
+	color: var(--white);
 }

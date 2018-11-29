@@ -154,7 +154,7 @@
 	right: 20px;
 }
 
-.photo__button:hover .btn__order {
+.photo__button:hover .btn {
 	color: var(--secondary);
 }
 
@@ -171,7 +171,7 @@
 	padding: 13px 45px;
 }
 
-.photo__button:active .btn__order {
+.photo__button:active .btn {
 	color: var(--white);
 }
 
